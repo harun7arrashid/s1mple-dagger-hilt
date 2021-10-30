@@ -10,6 +10,10 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
+        configurations.all {
+            resolutionStrategy { force 'androidx.core:core-ktx:1.6.0' }
+        }
+
         applicationId "id.s1mple.car"
         minSdkVersion 21
         targetSdkVersion 30
