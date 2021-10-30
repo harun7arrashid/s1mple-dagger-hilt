@@ -6,7 +6,7 @@ import android.widget.Toast
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
-@AndroidEntryPoint
+@AndroidEntryPoint // jika ini di implement di Fragment, maka di Activitynya ksh ini juga
 class MainActivity : AppCompatActivity() {
 
     @Inject

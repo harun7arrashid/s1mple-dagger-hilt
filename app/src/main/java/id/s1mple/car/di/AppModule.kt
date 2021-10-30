@@ -9,10 +9,10 @@ import dagger.hilt.components.SingletonComponent
 import id.s1mple.car.Engine
 import javax.inject.Singleton
 
-@Module
-@InstallIn(SingletonComponent::class)
+@Module // untuk memberitahu bahwa suatu class adalah module
+@InstallIn(SingletonComponent::class) // untuk memasukan module ini ke Component yg di inginkan
 class AppModule {
     @Singleton
-    @Provides
+    @Provides // untuk mengsuplai Object
     fun provideEngine(@ApplicationContext context: Context): Engine = Engine(context)
 }
